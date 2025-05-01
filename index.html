@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>The 45 Quest</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background: #fef6e4;
+      color: #001858;
+      text-align: center;
+      padding: 3em 1em;
+    }
+    h1 {
+      font-size: 2.5em;
+      margin-bottom: 0.2em;
+    }
+    input {
+      font-size: 1.2em;
+      padding: 0.6em;
+      border: 2px solid #001858;
+      border-radius: 5px;
+      width: 250px;
+      margin-bottom: 1em;
+    }
+    button {
+      font-size: 1.2em;
+      padding: 0.6em 1em;
+      background-color: #f582ae;
+      color: #fff;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    #result {
+      margin-top: 2em;
+      font-size: 1.2em;
+      padding: 1em;
+      border-top: 1px dashed #ccc;
+    }
+    .memory {
+      margin-top: 1em;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>🎉 The 45 Quest 🎉</h1>
+  <p>Enter your code below to unlock a birthday surprise:</p>
+
+  <input id="codeInput" type="text" placeholder="Enter code (e.g. Z45-01)" />
+  <br />
+  <button onclick="checkCode()">Unlock</button>
+
+  <div id="result"></div>
+
+  <script>
+    const content = {
+      "Z45-01": {
+        message: "This one's from our beach trip — sunburn, sangria, and that sandcastle we named Kevin.",
+        memory: "<img src='https://via.placeholder.com/400x250?text=Beach+Memory' alt='Memory' />",
+        clue: "Next code is hiding where things are *cold but never boring*."
+      },
+      "Z45-02": {
+        message: "This song always reminds me of us dancing in the living room like goofballs.",
+        memory: "<iframe width='300' height='169' src='https://www.youtube.com/embed/kJQP7kiw5Fk' title='Song' frameborder='0' allowfullscreen></iframe>",
+        clue: "The next note is somewhere that holds *your most epic socks*."
+      },
+      "Z45-03": {
+        message: "Watch this and remember: you’re hot, hilarious, and totally mine ❤️",
+        memory: "<video width='320' height='240' controls><source src='https://www.w3schools.com/html/mov_bbb.mp4' type='video/mp4'>Your browser does not support the video tag.</video>",
+        clue: "Next up: check where *snacks mysteriously vanish* at midnight."
+      }
+    };
+
+    function checkCode() {
+      const code = document.getElementById('codeInput').value.trim().toUpperCase();
+      const resultDiv = document.getElementById('result');
+
+      if (content[code]) {
+        resultDiv.innerHTML = `
+          <p><strong>🎁 Message:</strong> ${content[code].message}</p>
+          <div class="memory">${content[code].memory}</div>
+          <p><strong>🔍 Next Clue:</strong> ${content[code].clue}</p>
+        `;
+      } else {
+        resultDiv.innerHTML = `<p style="color:red;">Oops! Wrong code. Try again, birthday genius 🧠</p>`;
+      }
+    }
+  </script>
+</body>
+</html>
