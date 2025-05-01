@@ -61,10 +61,10 @@
   <div id="result"></div>
   <div id="finalMessage"></div>
 
- <script>
+<script>
   const finalSecretMessage = "Well done, Sherlock. Now shut up and kiss me.";
 
- const codes = {
+  const codes = {
   "bday01": {
     "text": "Wish #1 text goes here \u2014 warm, funny, loving.",
     "hint": "Hint for clue #2",
@@ -293,6 +293,7 @@
 };
 
   const revealed = {};
+
   function checkCode() {
     const input = document.getElementById('codeInput');
     const code = input.value.trim().toLowerCase();
@@ -303,15 +304,16 @@
       revealed[code] = true;
       const data = codes[code];
 
-      let message = `<p>✅ <strong>Wish Unlocked:</strong><br>${data.text}</p>`;
+      let html = `<div><p><strong>Wish:</strong> ${data.text}</p>`;
       if (data.attachment) {
-        message += `<p><strong>Attachment:</strong><br><a href="${data.attachment}" target="_blank">${data.attachment}</a></p>`;
+        html += `<p><strong>Attachment:</strong> <a href="${data.attachment}" target="_blank">${data.attachment}</a></p>`;
       }
       if (data.hint) {
-        message += `<p><strong>Next Clue:</strong> ${data.hint}</p>`;
+        html += `<p><strong>Next Hint:</strong> ${data.hint}</p>`;
       }
+      html += `</div>`;
 
-      resultDiv.innerHTML = message;
+      resultDiv.innerHTML = html;
       input.value = '';
 
       if (Object.keys(revealed).length === 45) {
@@ -336,10 +338,11 @@
     confetti.style.pointerEvents = 'none';
     confetti.style.zIndex = '9999';
     confetti.style.fontSize = '2rem';
-    confetti.innerHTML = '🎊'.repeat(200);
+    confetti.innerHTML = '🎊'.repeat(300);
     document.body.appendChild(confetti);
   }
 </script>
+
 
 
 </body>
