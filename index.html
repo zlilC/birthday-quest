@@ -63,38 +63,53 @@
 <script src="codes_FULL_REAL_ALL.js"></script>
 <script>
   const finalSecretMessage = "Well done, Sherlock. Now shut up and kiss me.";
-  const revealed = {};
+  const revealedLetters = Array(finalSecretMessage.length).fill('_');
+  const usedCodes = new Set();
+
   function checkCode() {
     const input = document.getElementById('codeInput');
     const code = input.value.trim().toLowerCase();
     const resultDiv = document.getElementById('result');
     const finalDiv = document.getElementById('finalMessage');
 
-    if (codes[code] && !revealed[code]) {
-      revealed[code] = true;
+    if (codes[code] && !usedCodes.has(code)) {
+      usedCodes.add(code);
       const data = codes[code];
 
-      let html = `<div><p><strong>Wish:</strong> ${data.text}</p>`;
+      // Reveal corresponding letter
+      const index = Object.keys(codes).indexOf(code);
+      if (index < finalSecretMessage.length) {
+        revealedLetters[index] = finalSecretMessage[index];
+      }
+
+      // Display wish + optional hint and attachment
+      let html = `<p><strong>Wish:</strong> ${data.text}</p>`;
       if (data.attachment) {
         html += `<p><strong>Attachment:</strong> <a href="${data.attachment}" target="_blank">${data.attachment}</a></p>`;
       }
       if (data.hint) {
         html += `<p><strong>Next Hint:</strong> ${data.hint}</p>`;
       }
-      html += `</div>`;
 
       resultDiv.innerHTML = html;
       input.value = '';
+      updateFinalMessage();
 
-      if (Object.keys(revealed).length === 45) {
-        finalDiv.innerHTML = `<div style="font-size: 1.8em; margin-top: 2em;">🎉 ${finalSecretMessage} 🎉</div>`;
-        showConfetti();
-      }
-
-    } else if (revealed[code]) {
+    } else if (usedCodes.has(code)) {
       resultDiv.innerHTML = `<p style="color:orange;">⚠️ You already used that code!</p>`;
     } else {
       resultDiv.innerHTML = `<p style="color:red;">❌ Invalid code. Try again, Mamunki!</p>`;
+    }
+  }
+
+  function updateFinalMessage() {
+    const msg = revealedLetters.join('');
+    const finalDiv = document.getElementById('finalMessage');
+    finalDiv.innerText = msg;
+
+    if (!msg.includes('_')) {
+      finalDiv.innerHTML = `🎉 ${finalSecretMessage} 🎉`;
+      showConfetti();
     }
   }
 
@@ -108,11 +123,10 @@
     confetti.style.pointerEvents = 'none';
     confetti.style.zIndex = '9999';
     confetti.style.fontSize = '2rem';
-    confetti.innerHTML = '🎊'.repeat(300);
+    confetti.innerHTML = '🎊'.repeat(200);
     document.body.appendChild(confetti);
   }
 </script>
-
 
 
 </body>
