@@ -83,12 +83,12 @@
       }
 
       // Display wish + optional hint and attachment
-      let html = `<p><strong>Wish:</strong> ${data.text}</p>`;
+      let html = `<p><strong></strong> ${data.text}</p>`;
       if (data.attachment) {
-        html += `<p><strong>Attachment:</strong> <a href="${data.attachment}" target="_blank">${data.attachment}</a></p>`;
+        html += `<p><strong></strong> <a href="${data.attachment}" target="_blank">${data.attachment}</a></p>`;
       }
       if (data.hint) {
-        html += `<p><strong>Next Hint:</strong> ${data.hint}</p>`;
+        html += `<p><strong>Hint:</strong> ${data.hint}</p>`;
       }
 
       resultDiv.innerHTML = html;
