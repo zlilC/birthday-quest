@@ -31,4 +31,68 @@
       background-color: #f582ae;
       color: #fff;
       border: none;
-      border-radius
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    #result, #finalMessage {
+      margin-top: 2em;
+      font-size: 1.2em;
+      padding: 1em;
+    }
+    #finalMessage {
+      font-size: 1.8em;
+      letter-spacing: 0.1em;
+      word-wrap: break-word;
+      max-width: 600px;
+      margin: 2em auto;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>🎉 Mamunki’s 45 Quest 🎉</h1>
+  <p>Enter the code you found to unlock your next surprise:</p>
+
+  <input id="codeInput" type="text" placeholder="Enter code (e.g. bday01)" />
+  <br />
+  <button onclick="checkCode()">Unlock</button>
+
+  <div id="result"></div>
+  <div id="finalMessage"></div>
+
+  <script>
+    const secretMessage = "IF LOST RETURN MAMUNKI TO ZLIL IMMEDIATELY!";
+    const codes = {};
+    const revealed = Array(secretMessage.length).fill('_');
+
+    // Generate bday01–bday45 codes and map them to message characters
+    for (let i = 0; i < 45; i++) {
+      const code = `bday${String(i + 1).padStart(2, '0')}`;
+      codes[code] = secretMessage[i];
+    }
+
+    function checkCode() {
+      const input = document.getElementById('codeInput');
+      const code = input.value.trim().toLowerCase();
+      const resultDiv = document.getElementById('result');
+      const finalDiv = document.getElementById('finalMessage');
+
+      if (codes[code]) {
+        const index = Object.keys(codes).indexOf(code);
+        revealed[index] = codes[code];
+        resultDiv.innerHTML = `<p>✅ Code accepted! You unlocked: <strong>${codes[code]}</strong></p>`;
+        input.value = '';
+        updateFinalMessage();
+      } else {
+        resultDiv.innerHTML = `<p style="color:red;">❌ Invalid code. Try again, Mamunki!</p>`;
+      }
+    }
+
+    function updateFinalMessage() {
+      document.getElementById('finalMessage').innerText = revealed.join('');
+    }
+  </script>
+
+</body>
+</html>
