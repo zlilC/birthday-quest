@@ -16,8 +16,8 @@ const codes = {
   },
   "bday04": {
     "text": "This is the song that played while I walked toward you, heart pounding, trying not to cry (and failing). It was the beginning of our forever \u2014 and every time I hear it, I fall in love with you all over again.",
-    "hint": "Go to the throne where you yell at strangers and forget time exists.",
-    "attachment": "our wedding song"
+    "hint": "Return to your gaming throne, where yelling at strangers and losing track of time is just part of the magic.",
+    "video": "https://www.youtube.com/watch?v=Q-IehwFYP2o"
   },
   "bday05": {
     "text": "May your aim stay sharp,your WiFi never lag,your snacks stay within arm\u2019s reach,and your controller batteries never betray you.",
