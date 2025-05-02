@@ -20,9 +20,9 @@ const codes = {
     "video": "https://www.youtube.com/watch?v=Q-IehwFYP2o"
   },
   "bday05": {
-    "text": "May your aim stay sharp,your WiFi never lag,your snacks stay within arm\u2019s reach,and your controller batteries never betray you.",
+    "text": "May your aim stay sharp, your WiFi never lag, your snacks stay within arm\u2019s reach, and your controller batteries never betray you.",
     "hint": "Go to the place where socks disappear and mysteries multiply.",
-    "attachment": "create a GAMER LICENSE"
+    "image": "images/5.jpeg"
   },
   "bday06": {
     "text": "You\u2019ve aged better than 90% of the clothes in this room.",
