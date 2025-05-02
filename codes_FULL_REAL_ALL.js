@@ -182,7 +182,7 @@ const codes = {
     "image": "images/36.jpeg",
   },
   "bday37": {
-    "text": "Buftzi wouldn\u2019t have enjoyed the party, but she would\u2019ve stayed close, grumbled a little, and loved you in her own weird, perfect way. Happy Birthday. May your year be cozy, cranky, well-fed, and fiercely loved \u2014 just like she would\u2019ve wanted it.",
+    "text": "Buftzi wouldn\u2019t have enjoyed the party, but she would\u2019ve stayed close, grumbled a little, and loved you in her own weird, perfect way. Happy Birthday. May your year be cozy, well-fed, and fiercely loved \u2014 just like she would\u2019ve wanted it.",
     "hint": "You open this 3x a day like it\u2019s a sacred ritual \u2014 check where the thirst gets real.",
     "image": "images/37.jpeg",
   },
