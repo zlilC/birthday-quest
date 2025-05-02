@@ -9,33 +9,40 @@
 <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@400..800&display=swap" rel="stylesheet">
   <style>
     body {
-       font-family: "Baloo 2", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: 400;
-  font-style: normal;
-      color: #001858;
-      text-align: center;
-      padding: 3em 1em;
-      background-image: URL("images/pattern.png");
+           font-family: "Baloo 2", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    color: #3f694f;
+    text-align: center;
+    padding: 2em;
+    background-image: URL("images/pattern.png");
+      
     }
     h1 {
-      font-size: 2.5em;
-      margin-bottom: 0.2em;
+          font-size: 2.5em;
+    margin-bottom: 0.2em;
+    color: #3f694f;
+    margin: 0;
+    }
+    h3{
+      font-size: large;
+    margin: 15px 0;
     }
     input {
       font-size: 1.2em;
       padding: 0.6em;
-      border: 2px solid #001858;
-      border-radius: 5px;
+      border: 2px solid #3f694f;
+      border-radius: 10px;
       width: 250px;
       margin-bottom: 1em;
-      text-transform: lowercase;
+      background: none;
     }
     button {
       font-size: 1.2em;
       padding: 0.6em 1em;
       background-color: #f582ae;
-      color: #fff;
+      color: #e6d1b5;
       border: none;
       border-radius: 5px;
       cursor: pointer;
@@ -53,19 +60,30 @@
       margin: 2em auto;
       font-weight: bold;
     }
+    .content{
+      padding: 20px;
+    border-radius: 15px;
+    background: #e6d1b5;
+    }
+    .result{
+      background: rgba(63, 105, 79, 0.2);
+    padding: 10px;
+    border-radius: 14px;
+    }
   </style>
 </head>
 <body>
-
+<div class="content">
   <h1>Mamunki’s 45 Quest</h1>
-  <p>Enter the code you found to reveal your next surprise:</p>
+  <h3>Enter a code to unlock a memory:</h3>
 
   <input id="codeInput" type="text" placeholder="Enter code" />
   <br />
   <button onclick="checkCode()">Reveal</button>
 
-  <div id="result"></div>
+  <div id="result" class="result"></div>
   <div id="finalMessage"></div>
+</div>
 <script src="codes_FULL_REAL_ALL.js"></script>
 <script>
   const finalSecretMessage = "Well done, Sherlock. Now shut up and kiss me.";
