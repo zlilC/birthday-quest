@@ -162,7 +162,7 @@ const codes = {
     "image": "images/32.jpeg",
   },
   "bday33": {
-    "text": "It\u2019s just a mat. But it\u2019s also the first thing we step on every time we walk into this new life... You belong here.",
+    "text": "It’s just a mat. But it’s also the first thing we step on every time we walk into this new life. This house is still fresh — the routines, the way we move through it. But somehow, it already feels like home… because of you. Every time we cross this door, we’re not just coming inside — we’re choosing each other. Again. In the good, the tired, the loud, the silly. I hope you always feel safe here.",
     "hint": "Go to the sock drawer — the land of lonely socks, secret lint, and the eternal search for a match.",
     "image": "images/33.jpeg",
   },
