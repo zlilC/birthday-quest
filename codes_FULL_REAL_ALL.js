@@ -30,9 +30,10 @@ const codes = {
     "image": "images/6.png"
   },
   "bday07": {
-    "text": "Right now, this room is full of wires, to-do lists, and my work brain.But soon\u2026 I kinda hope it\u2019s full of toys, baby burps, and adorable chaos. I think this office would make a pretty cute baby room, don\u2019t you?",
-    "hint": "Look where you light up, chill out, and pretend you\u2019re not just avoiding chores.",
-    "attachment": "ms sandman song"
+    "text": "Right now, this room is full of wires, to-do lists, and my work brain. But soon I kinda hope it\u2019s full of toys, baby burps, and adorable chaos. I think this office would make a pretty cute baby room, don\u2019t you?",
+    "hint": "Right under the ashtray — where you light up, chill out, and act like you're not just avoiding chores.",
+    "image": "images/7.png",
+    "video": "https://www.youtube.com/watch?v=CX45pYvxDiA"
   },
   "bday08": {
     "text": "May your smoke breaks be short, your thoughts be clear, and your lighter be where you actually left it for once.",
