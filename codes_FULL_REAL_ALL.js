@@ -22,7 +22,7 @@ const codes = {
   "bday05": {
     "text": "May your aim stay sharp, your WiFi never lag, your snacks stay within arm\u2019s reach, and your controller batteries never betray you.",
     "hint": "Go to the place where socks disappear and mysteries multiply.",
-    "image": "images/5.jpeg"
+    "image": "images/5.png"
   },
   "bday06": {
     "text": "You\u2019ve aged better than 90% of the clothes in this room.",
