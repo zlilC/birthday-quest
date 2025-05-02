@@ -223,7 +223,6 @@ const codes = {
   },
   "bday45": {
     "text": "You\u2019ve found every note, every memory, every ridiculous hiding place. But this is the only one that really matters. This is where you are loved most, held closest, and always \u2014 always \u2014 home. I hope this hunt made you smile, made you feel how much I adore you, and reminded you that life with me will always be full of surprises, nonsense, and way too many clues. Happy Birthday, Mamunki.",
-   
-    "image": null,
+   "image": "Mamunki 45.png",
   }
 };
