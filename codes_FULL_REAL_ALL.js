@@ -48,7 +48,7 @@ const codes = {
   "bday10": {
     "text": "You\u2019re hot, strong, and essential to my day \u2014 just like your coffee.",
     "hint": "The next clue is hiding where you wage war against 3 rogue hairs and win every time.",
-    "image": "images/10.jpeg",
+    "image": "images/10_1.jpeg",
     
   },
   "bday11": {
