@@ -70,6 +70,9 @@
     padding: 10px;
     border-radius: 14px;
     }
+    img{
+      width:100%;
+    }
   </style>
 </head>
 <body>
@@ -109,7 +112,7 @@
       // Display wish + optional hint and attachment
       let html = `<div class="result"><p><strong></strong> ${data.text}</p>`;
       if (data.image) {
-        html += `<p><<img src=${data.image}></p>`;
+        html += `<p><img src=${data.image}></p>`;
       }
       if (data.attachment) {
         html += `<p><strong></strong> <a href="${data.attachment}" target="_blank">${data.attachment}</a></p>`;
