@@ -41,7 +41,7 @@
     button {
       font-size: 1.2em;
       padding: 0.6em 1em;
-      background-color: #f582ae;
+      background-color: #3f694f;
       color: #e6d1b5;
       border: none;
       border-radius: 5px;
@@ -81,7 +81,7 @@
   <br />
   <button onclick="checkCode()">Reveal</button>
 
-  <div id="result" class="result"></div>
+  <div id="result"></div>
   <div id="finalMessage"></div>
 </div>
 <script src="codes_FULL_REAL_ALL.js"></script>
@@ -107,7 +107,7 @@
       }
 
       // Display wish + optional hint and attachment
-      let html = `<p><strong></strong> ${data.text}</p>`;
+      let html = `<div class="result"><p><strong></strong> ${data.text}</p>`;
       if (data.image) {
         html += `<p><<img src=${data.image}></p>`;
       }
@@ -117,7 +117,7 @@
       if (data.hint) {
         html += `<p><strong>Hint:</strong> ${data.hint}</p>`;
       }
-
+html += `</div>`;
       resultDiv.innerHTML = html;
       input.value = '';
       updateFinalMessage();
