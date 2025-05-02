@@ -137,7 +137,7 @@ const codes = {
     "image": "images/27.jpeg",
   },
   "bday28": {
-    "text": "May you always be the dog\u2019s favorite person \u2014 and mine. Even when you both ignore me.",
+    "text": "Here’s to a year where the dog never steals your spot, always lets you win tug-of-war, and shares the blanket… sometimes.",
     "hint": "Go to the thing you keep stealing from me, despite having your own. Rude. Your clue is behind my forgiveness.",
     "image": "images/28.jpeg",
   },
