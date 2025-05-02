@@ -114,7 +114,13 @@
         html += `<p><img src=${data.image}></p>`;
       }
       if (data.video) {
-        html += `<p><iframe src=${data.video}></iframe></p>`;
+        const videoUrl = data.video; // e.g., "https://www.youtube.com/watch?v=Q-IehwFYP2o"
+const videoId = videoUrl.split('v=')[1]; // Extracts "Q-IehwFYP2o"
+const embedUrl = `https://www.youtube.com/embed/${videoId}`;
+
+html += `<p><iframe width="100%" src="${embedUrl}" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></p>`;
+
+       
       }
       if (data.attachment) {
         html += `<p><strong></strong> <a href="${data.attachment}" target="_blank">${data.attachment}</a></p>`;
