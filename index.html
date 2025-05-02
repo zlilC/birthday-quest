@@ -47,11 +47,6 @@
       border-radius: 5px;
       cursor: pointer;
     }
-    #result, #finalMessage {
-      margin-top: 2em;
-      font-size: 1.2em;
-      padding: 1em;
-    }
     #finalMessage {
       font-size: 1.8em;
       letter-spacing: 0.1em;
@@ -120,15 +115,15 @@
       if (data.hint) {
         html += `<p><strong>Hint:</strong> ${data.hint}</p>`;
       }
-html += `</div>`;
+      html += `</div>`;
       resultDiv.innerHTML = html;
       input.value = '';
       updateFinalMessage();
 
     } else if (usedCodes.has(code)) {
-      resultDiv.innerHTML = `<p style="color:orange;">⚠️ You already used that code!</p>`;
+      resultDiv.innerHTML = `<p style="color:orange;">You already used that code!</p>`;
     } else {
-      resultDiv.innerHTML = `<p style="color:red;">❌ Invalid code. Try again, Mamunki!</p>`;
+      resultDiv.innerHTML = `<p style="color:red;">Invalid code. Try again, Mamunki!</p>`;
     }
   }
 
