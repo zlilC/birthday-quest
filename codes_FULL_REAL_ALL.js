@@ -12,7 +12,7 @@ const codes = {
   "bday03": {
     "text": "Here\u2019s to another year of opening the fridge 7 times in a row and still not knowing what you want.",
     "hint": "It\u2019s where the soundtrack to our lives starts spinning.",
-    "image": "images/3.jpeg"
+    "image": "images/3_1.jpeg"
   },
   "bday04": {
     "text": "This is the song that played while I walked toward you, heart pounding, trying not to cry (and failing). It was the beginning of our forever \u2014 and every time I hear it, I fall in love with you all over again.",
