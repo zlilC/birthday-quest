@@ -1,8 +1,8 @@
 const codes = {
   "bday01": {
-    "text": "This is so exciting, lets start, 'Yalla Panchagwa'",
+    "text": "This is so exciting — our first photo together! Yalla Panchagwa — let the adventure begin!",
     "hint": "Go where the snacks whisper your name at 2AM.",
-    "attachment": "image.jpg"
+    "image": "images/1.jpeg"
   },
   "bday02": {
     "text": "I wish your 45th year is filled with long naps, short meetings, and endless snacks.",
