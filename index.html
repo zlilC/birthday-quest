@@ -69,6 +69,9 @@
     img{
       width:100%;
     }
+    iframe{
+      width:100%;
+    }
   </style>
 </head>
 <body>
@@ -109,6 +112,9 @@
       let html = `<div class="result"><p><strong></strong> ${data.text}</p>`;
       if (data.image) {
         html += `<p><img src=${data.image}></p>`;
+      }
+      if (data.video) {
+        html += `<p><iframe src=${data.video}></iframe></p>`;
       }
       if (data.attachment) {
         html += `<p><strong></strong> <a href="${data.attachment}" target="_blank">${data.attachment}</a></p>`;
