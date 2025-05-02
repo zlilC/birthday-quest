@@ -1,13 +1,13 @@
 const codes = {
   "bday01": {
     "text": "This is so exciting — our first photo together! Yalla Panchagwa — let the adventure begin!",
-    "hint": "Go where the snacks whisper your name at 2AM.",
+    "hint": "Follow the whispers to the pantry at 2AM — where the snacks call your name.",
     "image": "images/1.jpeg"
   },
   "bday02": {
-    "text": "I wish your 45th year is filled with long naps, short meetings, and endless snacks.",
+    "text": "May your 45th be blessed with long naps, short meetings, and a pantry that’s always stocked with kettle corn.",
     "hint": "Your next clue is hiding where you stare blankly, hoping dinner ideas magically appear.",
-    "attachment": "image of us doing snacking"
+    "image": "images/2.jpeg"
   },
   "bday03": {
     "text": "Here\u2019s to another year of opening the fridge 7 times in a row and still not knowing what you want.",
