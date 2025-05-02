@@ -37,18 +37,18 @@ const codes = {
   },
   "bday08": {
     "text": "May your smoke breaks be short, your thoughts be clear, and your lighter be where you actually left it for once.",
-    "hint": "Find your next clue where your deepest thinking \u2014 and longest disappearing acts \u2014 happen daily.",
-    "attachment": "image of him smoking"
+    "hint": "Head to the guest bathroom — your favorite place for ‘thinking’ and mysteriously long disappearances.",
+    "image": "images/8.jpeg",
   },
   "bday09": {
     "text": "May your bathroom breaks be long enough to clear your head \u2014 but not so long you forget how knees work.",
-    "hint": "Go to the sacred machine that turns you from grumpy goblin to functioning adult.",
-    "attachment": "embedded YouTube video"
+    "hint": "Go to the sacred coffee machine — the one that transforms you from grumpy goblin to functioning adult.",
+    "video": "https://www.youtube.com/shorts/vgl53nn_47M"
   },
   "bday10": {
     "text": "You\u2019re hot, strong, and essential to my day \u2014 just like your coffee.",
     "hint": "The next clue is hiding where you wage war against 3 rogue hairs and win every time.",
-    "attachment": "image"
+    
   },
   "bday11": {
     "text": "Here\u2019s to another year of shaving absolutely nothing \u2014 but looking like a damn icon doing it.",
