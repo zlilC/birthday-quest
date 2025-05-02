@@ -108,6 +108,9 @@
 
       // Display wish + optional hint and attachment
       let html = `<p><strong></strong> ${data.text}</p>`;
+      if (data.image) {
+        html += `<p><<img src=${data.image}></p>`;
+      }
       if (data.attachment) {
         html += `<p><strong></strong> <a href="${data.attachment}" target="_blank">${data.attachment}</a></p>`;
       }
