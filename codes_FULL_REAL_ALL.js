@@ -21,13 +21,13 @@ const codes = {
   },
   "bday05": {
     "text": "May your aim stay sharp, your WiFi never lag, your snacks stay within arm\u2019s reach, and your controller batteries never betray you.",
-    "hint": "Go to the place where socks disappear and mysteries multiply.",
+    "hint": "Enter the laundry room: the Bermuda Triangle of socks and sanity.",
     "image": "images/5.png"
   },
   "bday06": {
-    "text": "You\u2019ve aged better than 90% of the clothes in this room.",
-    "hint": "Your next clue is hiding where the my to-do lists cry and the post-its multiply.",
-    "attachment": null
+    "text": "May you keep aging like fine wine… not like the stretched-out T-shirts in this laundry room.",
+    "hint": "Your next clue is hiding where my to-do lists cry and the post-its multiply.",
+    "attachment": "images/6.png"
   },
   "bday07": {
     "text": "Right now, this room is full of wires, to-do lists, and my work brain.But soon\u2026 I kinda hope it\u2019s full of toys, baby burps, and adorable chaos. I think this office would make a pretty cute baby room, don\u2019t you?",
